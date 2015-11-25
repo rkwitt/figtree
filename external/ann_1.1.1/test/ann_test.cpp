@@ -374,7 +374,7 @@ const char shrink_table[N_SHRINK_RULES][STRING_LEN] = {
 //----------------------------------------------------------------------
 
 void Error(								// error routine
-	char				*msg,			// error message
+	const char			*msg,			// error message
 	ANNerr				level)			// abort afterwards
 {
 	if (level == ANNabort) {

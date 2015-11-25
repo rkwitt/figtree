@@ -98,7 +98,7 @@ double			offset_y;
 //	Error handler
 //----------------------------------------------------------------------
 
-void Error(char *msg, ANNerr level)
+void Error(const char *msg, ANNerr level)
 {
 	if (level == ANNabort) {
 		cerr << "ann2fig: ERROR------->" << msg << "<-------------ERROR\n";
@@ -584,8 +584,9 @@ void readANN()
 // procedure.
 //----------------------------------------------------------------------
 
-main(int argc, char **argv)
+int main(int argc, char **argv)
 {
 	getArgs(argc, argv);						// get input arguments
 	readANN();									// read the dump file
+	return 0;
 }

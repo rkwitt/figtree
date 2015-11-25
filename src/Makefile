@@ -1,13 +1,13 @@
 #-----------------------------------------------------------------------------
 # Some basic definitions:
-#		BASEDIR		where include, src, lib, ... are
-#		INCLIB		include directory
-#		LIBLIB		library directory
+#       BASEDIR     where include, src, lib, ... are
+#       INCLIB      include directory
+#       LIBLIB      library directory
 #-----------------------------------------------------------------------------
-BASEDIR	= ..
-INCDIR	= $(BASEDIR)/include
-LIBDIR	= $(BASEDIR)/lib
-BINDIR      = $(BASEDIR)/bin
+BASEDIR = ..
+INCDIR  = $(BASEDIR)/include
+LIBDIR  = $(BASEDIR)/lib
+BINDIR  = $(BASEDIR)/bin
 
 #-----------------------------------------------------------------------------
 # If you do not have the ANN library on your system or wish to compile 

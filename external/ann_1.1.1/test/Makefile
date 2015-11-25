@@ -81,7 +81,7 @@ include ../Make-config
 #-----------------------------------------------------------------------------
 
 ann_test.o: ann_test.cpp
-	$(C++) -c -I$(INCDIR) $(CFLAGS) ann_test.cpp
+	$(C++) -Wno-tautological-constant-out-of-range-compare -c -I$(INCDIR) $(CFLAGS) ann_test.cpp
 
 rand.o: rand.cpp
 	$(C++) -c -I$(INCDIR) $(CFLAGS) rand.cpp
